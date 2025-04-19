@@ -1,6 +1,6 @@
 .env
 mysite/media
-mysite/static
+
 mysite/db.sqlite3
 .htacess
 venv

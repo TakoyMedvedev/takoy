@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-from localsettigs import *
+from .localsettigs import *
 
 import os
 from pathlib import Path
