@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Профессиональное создание сайтов любой сложности. Разработка современных и качественных веб-решений.">
+<title>{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+{% include 'main/header.html' %}
+
+<section class="breadcrumbs">
+  <div class="container">
+      <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+              <a href="{% url 'home' %}" class="breadcrumbs__link">Главная</a>
+          </li>
+          
+          <li class="breadcrumbs__item">
+              <span class="breadcrumbs__current">{{ post.title }}</span>
+          </li>
+      </ul>
+  </div>
+</section>
+
+<section id="blog">
+  
+  
+    <div class="blog__inner">
+
+      <div class="container">
+        <div class="blog__cart">
+          <img src="{{ post.img.url }}" alt="" class="blog__img">
+          <h2 class="blog__title">{{ post.title }}</h2>
+          <p class="blog__description">{{ post.description }}</p>
+          <p class="blog__data">{{ post.data }}</p>
+    
+        </div>
+
+      </div>
+
+     
+
+      
+    </div> 
+    
+  </section>
+
+{% include 'main/footer.html' %}
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

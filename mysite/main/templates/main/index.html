@@ -1,0 +1,344 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+
+<section id="hero">
+
+
+    <div class="hero__inner" style="background: 
+	linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), 
+	url(); max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	">
+  
+        <div class="container">
+            <div class="hero__akcia">
+              <div class="hero__left">
+                <div class="hero__left__top">
+                  <h1 class="zagolovoksite">{{ HeroBlock.title }}</h1>
+                <p class="description__hero">{{ HeroBlock.description }}</p>
+                
+
+                </div>
+                <div class="hero__left__bottom">
+                  <a href="#" class="hero__btn">Обсудить проект</a>
+                  
+
+                </div>
+              </div>
+              <div class="hero__right">
+                <img style="background: 
+	linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255))" class="hero__img" src="{% static HeroBlock.img %}" alt="">
+
+              </div>
+               
+
+                
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+
+    
+</section>
+
+
+<section id="services">
+  <div class="container">
+    <div class="zag__service">
+      <h2 class="services__title">Услуги</h2>
+      <div class="slider__nav">
+        <button class="slider__btn prev">←</button>
+        <button class="slider__btn next">→</button>
+      </div>
+    </div>
+    
+    <div class="slider__container">
+      <div class="services__slider">
+        <div class="services__card">
+          <span class="services__number">01</span>
+          <h3>Landing Page</h3>
+          <p>Создание продающих одностраничных сайтов с высокой конверсией</p>
+        </div>
+        <div class="services__card">
+          <span class="services__number">02</span>
+          <h3>Корпоративный сайт</h3>
+          <p>Разработка представительских сайтов для вашего бизнеса</p>
+        </div>
+        <div class="services__card">
+          <span class="services__number">03</span>
+          <h3>Интернет-магазин</h3>
+          <p>Создание функциональных онлайн-магазинов любой сложности</p>
+        </div>
+        <div class="services__card">
+          <span class="services__number">04</span>
+          <h3>SEO-оптимизация</h3>
+          <p>Комплексное продвижение сайтов в поисковых системах</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="portfolio">
+  <div class="container">
+    <div class="portfolio__inner">
+      <h2 class="portfolio__zag">Порт<br>фолио</h2>
+      
+        <div class="portfolio__card" style="background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url({% static "img/hero.jpg" %}); max-width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      ">
+      <a href="#">
+        <div class="portfolio__info">
+          <h2 class="portfolio__name">Название</h2>
+          <p class="portfolio__txt">Описание</p>
+        </div>
+        <div class="portfolio_btn">
+          <a href="#" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="white" />
+            <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="white" />
+            <path d="M25 16V18H8V16H25Z" fill="white" />
+          </svg></a>
+        </div>
+      
+        </div>
+  
+      </a>
+      
+    
+      
+        <div class="portfolio__card" style="background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url({% static "img/hero.jpg" %}); max-width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      ">
+      <a href="#">
+        <div class="portfolio__info">
+          <h2 class="portfolio__name">Название</h2>
+          <p class="portfolio__txt">Описание</p>
+        </div>
+        <div class="portfolio_btn">
+          <a href="#" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="white" />
+            <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="white" />
+            <path d="M25 16V18H8V16H25Z" fill="white" />
+          </svg></a>
+        </div>
+      
+        </div>
+  
+        <div class="portfolio__card" style="background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url({% static "img/hero.jpg" %}); max-width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        ">
+        <a href="#">
+          <div class="portfolio__info">
+            <h2 class="portfolio__name">Название</h2>
+            <p class="portfolio__txt">Описание</p>
+          </div>
+          <div class="portfolio_btn">
+            <a href="#" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="white" />
+              <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="white" />
+              <path d="M25 16V18H8V16H25Z" fill="white" />
+            </svg></a>
+          </div>
+        
+          </div>
+  
+          <div class="portfolio__card" style="background: 
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+          url({% static "img/hero.jpg" %}); max-width: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          ">
+          <a href="#">
+            <div class="portfolio__info">
+              <h2 class="portfolio__name">Название</h2>
+              <p class="portfolio__txt">Описание</p>
+            </div>
+            <div class="portfolio_btn">
+              <a href="#" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="white" />
+                <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="white" />
+                <path d="M25 16V18H8V16H25Z" fill="white" />
+              </svg></a>
+            </div>
+          
+            </div>
+  
+            <div class="portfolio__card" style="background: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url({% static "img/hero.jpg" %}); max-width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            ">
+            <a href="#">
+              <div class="portfolio__info">
+                <h2 class="portfolio__name">Название</h2>
+                <p class="portfolio__txt">Описание</p>
+              </div>
+              <div class="portfolio_btn">
+                <a href="#" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="white" />
+                  <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="white" />
+                  <path d="M25 16V18H8V16H25Z" fill="white" />
+                </svg></a>
+              </div>
+            
+              </div>
+  
+      </a>
+      
+      
+      
+    </div>
+
+  </div>
+  
+  
+</section>
+
+
+<section id="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__card">
+        <h2 class="about__number">2019</h2>
+        <p class="about__txt">С 2019 года профессионально занимаемся созданием сайтов, которые не только привлекают внимание, но и эффективно продвигаются в поисковых системах. Наша веб-студия сочетает креативный дизайн, технически безупречную разработку и SEO-оптимизированные решения: от адаптивной верстки и ускорения загрузки до semantic markup и мета-тегов. Специализируемся на создании лендингов, корпоративных сайтов, интернет-магазинов и веб-приложений с учетом ключевых запросов, юзабилити и современных алгоритмов поиска. Каждый проект — это увеличение конверсии, рост органического трафика и укрепление онлайн-позиций бизнеса.</p>
+      </div>
+      <div class="about__card">
+        <h2 class="about__number">983</h2>
+        <p class="about__txt">За 5 лет работы мы успешно реализовали 983 сайта — от продающих лендингов и корпоративных платформ до высоконагруженных интернет-магазинов и SEO-ориентированных веб-приложений. Каждый проект сопровождается глубоким аудитом ЦА, semantic markup, оптимизацией мета-тегов, скоростных показателей и мобильной адаптивности, что гарантирует рост видимости в поисковиках. Наш опыт, подкрепленный сотнями кейсов, позволяет не просто создавать сайты, а выводить их в ТОП-выдачи, увеличивать органический трафик и конверсию.</p>
+      </div>
+      <div class="about__card">
+        <h2 class="about__number">57</h2>
+        <p class="about__txt">57 наших сайтов вошли в авторитетную подборку SimilarWeb, став примером высокой SEO-эффективности и бизнес-результатов. Эти проекты — от SaaS-платформ до интернет-магазинов — демонстрируют стабильный рост органического трафика, низкий показатель отказов и высокую конверсию благодаря продуманной семантике, оптимизации под поведенческие факторы и работе с контентом. Рейтинг SimilarWeb подтверждает: наши решения не просто соответствуют требованиям поисковых систем, но и опережают конкурентов по ключевым метрикам. </p>
+      </div>
+
+    </div>
+
+    
+  
+  </div>
+  
+    
+</section>
+
+
+
+<section id="team" class="team-section">
+  <div class="container">
+    <h2 class="team-title">Моя команда</h2>
+    <p class="team-description">Мы — команда профессионалов, которая объединяет опытных разработчиков, дизайнеров и маркетологов. Каждый из нас вносит свой вклад в создание уникальных и эффективных веб-решений.</p>
+    <div class="team__inner">
+
+      <div class="team-slider">
+        <div class="team-card">
+          <img src="{% static 'img/dev1.jpg' %}" alt="Developer" class="team-img">
+          <h3>Александр</h3>
+          <p>Frontend Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="{% static 'img/dev2.jpg' %}" alt="Developer" class="team-img">
+          <h3>Мария</h3>
+          <p>UI/UX Designer</p>
+        </div>
+        <div class="team-card">
+          <img src="{% static 'img/dev3.jpg' %}" alt="Developer" class="team-img">
+          <h3>Дмитрий</h3>
+          <p>Backend Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="{% static 'img/dev3.jpg' %}" alt="Developer" class="team-img">
+          <h3>Дмитрий</h3>
+          <p>Backend Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="{% static 'img/dev3.jpg' %}" alt="Developer" class="team-img">
+          <h3>Дмитрий</h3>
+          <p>Backend Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="{% static 'img/dev3.jpg' %}" alt="Developer" class="team-img">
+          <h3>Дмитрий</h3>
+          <p>Backend Developer</p>
+        </div>
+      </div>
+      <div class="team-nav">
+        <button class="team-btn prev">←</button>
+        <button class="team-btn next">→</button>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<section id="blog">
+  <div class="container">
+    <h2 class="portfolio__zag">Блог</h2>
+    <div class="blog__inner">
+      
+      {% for post in posts %}
+      <div class="blog__cart">
+        <a href="{{ post.id }}"><img src="{{ post.img.url }}" alt="" class="blog__img"></a>
+        <h2 class="blog__title"><a href="{{ post.id }}">{{ post.title }}</a></h2>
+        <p class="blog__description blog__description_txt">{{ post.description }}</p>
+        <div class="blog__bottom">
+          <p class="blog__data">{{ post.data }}</p>
+          <a href="{{ post.id }}" class="btn__porfilio"><svg class="arrow__bottom" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-2.38418e-07 17C-2.38418e-07 7.6 7.6 0 17 0C26.4 0 34 7.6 34 17C34 26.4 26.4 34 17 34C7.6 34 -2.38418e-07 26.4 -2.38418e-07 17ZM32 17C32 8.7 25.3 2 17 2C8.7 2 2 8.7 2 17C2 25.3 8.7 32 17 32C25.3 32 32 25.3 32 17Z" fill="black" />
+            <path d="M15.3004 25.2998L23.6004 16.9998L15.3004 8.69981L16.7004 7.2998L26.4004 16.9998L16.7004 26.6998L15.3004 25.2998Z" fill="black" />
+            <path d="M25 16V18H8V16H25Z" fill="black" />
+          </svg></a>
+  
+        </div>
+        
+  
+      </div>
+      {% endfor %}
+      
+    </div> 
+
+  </div>
+  
+  
+  
+  
+</section>
+
+
+
+
+{% endblock %}
