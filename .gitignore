@@ -8,3 +8,4 @@ venv
 mysite/mysite/localsettigs.py
 
 **/migrations
+__MACOSX
