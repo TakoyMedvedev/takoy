@@ -5,3 +5,4 @@ mysite/db.sqlite3
 .htacess
 venv
 **/__pycache__
+mysite/mysite/localsettigs.py
